@@ -31,22 +31,26 @@
     .row{display:flex;gap:12px;flex-wrap:wrap}
     .cta{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);padding:8px 12px;border-radius:12px}
     .cta:hover{border-color:var(--accent)}
+    .profile{display:flex;gap:16px;align-items:center;margin:8px 20px 0}
+    .avatar{width:72px;height:72px;border-radius:999px;border:1px solid var(--border);object-fit:cover}
   </style>
 </head>
 <body>
   <header>
     <nav>
       <a href="#projects">Projects</a>
+      <a href="#resume">Résumé</a>
       <a href="#about">About</a>
       <a href="mailto:rizkyfebriibrahabibie@gmail.com">Contact</a>
       <a href="https://github.com/rfih" target="_blank" rel="noopener">GitHub</a>
       <a href="https://www.linkedin.com/in/rizkyfebriibrahabibie/" target="_blank" rel="noopener">LinkedIn</a>
     </nav>
     <h1>Rizky Febri Ibra Habibie</h1>
-    <p class="muted">Data Analyst • Data Scientist-in-Progress — I build practical, business-ready analytics and forecasting tools. TOEIC 870. Based in Taiwan.</p>
+    <p class="muted">Data Analyst • Product‑minded • Manufacturing & Forecasting — I build practical, business‑ready analytics and time‑series tools. TOEIC 870. Based in Taiwan.</p>
     <div class="row">
       <a class="cta" href="https://rfih.github.io/Portfolio/" target="_blank" rel="noopener">Live Portfolio</a>
       <a class="cta" href="#projects">Jump to Projects</a>
+      <a class="cta" href="#resume">Résumé</a>
     </div>
   </header>
 
@@ -87,6 +91,10 @@
   </section>
 
   <h2 id="about" class="section-title">About</h2>
+  <div class="profile">
+    <img class="avatar" src="https://github.com/rfih.png?size=240" alt="Rizky's GitHub avatar" />
+    <div class="muted">Photo is pulled from GitHub profile avatar. Update your GitHub picture to change it here.</div>
+  </div>
   <section class="grid">
     <article class="card">
       <h3 class="title">Hi, I’m Rizky 👋</h3>
@@ -97,6 +105,32 @@
         <a class="cta" href="https://www.linkedin.com/in/rizkyfebriibrahabibie/" target="_blank" rel="noopener">LinkedIn</a>
         <a class="cta" href="https://github.com/rfih" target="_blank" rel="noopener">GitHub</a>
       </div>
+    </article>
+  </section>
+
+  <h2 id="resume" class="section-title">Résumé</h2>
+  <section class="grid">
+    <article class="card">
+      <h3 class="title">Experience</h3>
+      <ul class="muted" style="margin:0 0 8px 18px">
+        <li><strong>Production Section Leader</strong>, 明鴻木器股份有限公司 (Aug 2025 – present) — lead daily production, deliver on-time & quality, coordinate maintenance/planning, drive MES & SOP improvements.</li>
+        <li><strong>Equipment Engineer</strong> (Mar 2025 – Aug 2025) — preventive maintenance procedures, equipment DB, spare-part controls, process documentation.</li>
+        <li><strong>Warehouse Trainee</strong> (Dec 2024 – Mar 2025) — inventory ops; proposed FlexSim-based layouts (narrow-aisle, mezzanine).</li>
+        <li><strong>Management Trainee</strong> (Jun 2024 – Mar 2025) — station standards, built door‑frame calculator app, authored maintenance SOPs.</li>
+      </ul>
+      <div class="row">
+        <a class="cta" href="./Rizky_CV.pdf" target="_blank" rel="noopener">Download PDF CV</a>
+      </div>
+    </article>
+    <article class="card">
+      <h3 class="title">Education & Certifications</h3>
+      <ul class="muted" style="margin:0 0 8px 18px">
+        <li><strong>Data Science & Data Analyst Certification</strong>, Dibimbing.id (Apr 2025 – present)</li>
+        <li><strong>M.Sc. Industrial Management</strong>, NTUST (GPA 3.78/4.30)</li>
+        <li><strong>Mandarin Training</strong>, NTNU (Jul 2023 – May 2024)</li>
+        <li><strong>B.Eng. Chemical Engineering</strong>, UII (GPA 3.35/4.00)</li>
+      </ul>
+      <p class="muted">Languages: Bahasa (native), English (TOEIC 870), Chinese Traditional (TOCFL A2). Skills: Python, Power BI/DAX, SQL, Aspen Hysys, Jira, FlexSim, Excel.</p>
     </article>
   </section>
 
