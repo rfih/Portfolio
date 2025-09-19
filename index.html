@@ -23,6 +23,20 @@
     .icons a{color:var(--text);font-size:22px;text-decoration:none}
     .icons a:hover{color:var(--link)}
   .wrap>nav{display:none}
+.section{max-width:1100px;margin:40px auto;padding:0 20px}
+.section h2{font-size:28px;margin-bottom:10px}
+.lead{color:var(--muted);line-height:1.7;max-width:960px}
+.trusted{max-width:1100px;margin:30px auto 10px;padding:0 20px;text-align:center;font-weight:800;font-size:26px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:36px;max-width:1100px;margin:0 auto;padding:0 20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.timeline{border-left:2px solid var(--line);padding-left:14px}
+.timeline .item{margin:14px 0}
+.timeline .where{font-weight:700}
+.timeline .role{color:var(--muted)}
+.timeline .dates{float:right;color:var(--muted);font-size:13px}
+.btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--text);color:var(--text);padding:10px 14px;border-radius:999px;text-decoration:none;margin-top:10px}
+.btn:hover{background:rgba(255,255,255,.06)}
+@media(max-width:880px){.grid-2{grid-template-columns:1fr}}
 </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -55,7 +69,7 @@
     </div>
   </section>
 
-    <!-- About Me -->
+  <!-- About Me -->
   <section id="about" class="section">
     <h2>About Me</h2>
     <p class="lead">I collaborate across product, operations, and engineering to turn messy data into decision‑ready dashboards and forecasts. Coming from manufacturing, I focus on pragmatic wins: faster reporting, better capacity planning, and fewer surprises. I care about clear communication, maintainable pipelines, and shipping with polish.</p>
@@ -118,76 +132,5 @@
     </div>
   </section>
 
-    <!-- DATA ANALYSIS 2 -->
-    <article class="card">
-      <div class="kicker">Data Analysis · Slides</div>
-      <h3 class="title">Global IC Trade – Exploratory Insights</h3>
-      <div>
-        <span class="tag">EDA</span><span class="tag">Storytelling</span><span class="tag">Comtrade</span>
-      </div>
-      <p>Explains why top <em>exporters</em> aren’t always top <em>producers</em>: Hong Kong/Singapore as re‑export hubs; Russia/Belarus high volume but low value; opportunities for Indonesia to move into higher‑value IC segments.</p>
-      <p><a href="https://github.com/rfih/Dibimbing---DSDA/tree/e7944923e68a7f86ffdcc906675cbc01d86c4d8e/Final%20Project%20Data%20Analysis" target="_blank" rel="noopener">Repo / Slides</a></p>
-    </article>
-
-    <!-- DATA SCIENCE -->
-    <article class="card">
-      <div class="kicker">Data Science · Forecasting</div>
-      <h3 class="title">IC Value Forecasting (2025)</h3>
-      <div>
-        <span class="tag">Time‑series</span><span class="tag">Fourier</span><span class="tag">Regression</span><span class="tag">Hybrid</span>
-      </div>
-      <p>Forecasts global IC export value for remaining 2025 months using SNaive12 (baseline), Linear Trend with Seasonality, Regression (Fourier), and a Hybrid (Regression + lag residuals). <strong>Hybrid</strong> wins (≈$0.13T RMSE). Strong seasonality: Feb low; Sep–Nov peaks.</p>
-      <p><a href="https://github.com/rfih/Dibimbing---DSDA/tree/e7944923e68a7f86ffdcc906675cbc01d86c4d8e/Final%20Project%20Data%20Science" target="_blank" rel="noopener">Repo / Files</a></p>
-    </article>
-  </section>
-
-  <h2 id="about" class="section-title">About</h2>
-  <div class="profile">
-    <img class="avatar" src="https://github.com/rfih.png?size=240" alt="Rizky's GitHub avatar" />
-    <div class="muted"></div>
-  </div>
-  <section class="grid">
-    <article class="card">
-      <h3 class="title">Hi, I’m Rizky 👋</h3>
-      <p>I’m a Product‑minded Data Analyst with hands‑on experience in manufacturing analytics and web apps. Recent work includes a Power BI dashboard for global IC trade and a time‑series forecasting project to support budgeting & S&OP decisions.</p>
-      <p class="muted">Tools I use: Python (pandas, scikit‑learn), Power BI/DAX, SQL, Flask, GitHub, Excel.</p>
-      <div class="row" style="margin-top:8px">
-        <a class="cta" href="mailto:rizkyfebriibrahabibie@gmail.com">Email</a>
-        <a class="cta" href="https://www.linkedin.com/in/rizkyfebriibrahabibie/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="cta" href="https://github.com/rfih" target="_blank" rel="noopener">GitHub</a>
-      </div>
-    </article>
-  </section>
-
-  <h2 id="resume" class="section-title">Résumé</h2>
-  <section class="grid">
-    <article class="card">
-      <h3 class="title">Experience</h3>
-      <ul class="muted" style="margin:0 0 8px 18px">
-        <li><strong>Production Section Leader</strong>, 明鴻木器股份有限公司 (Aug 2025 – present) — lead daily production, deliver on-time & quality, coordinate maintenance/planning, drive MES & SOP improvements.</li>
-        <li><strong>Equipment Engineer</strong> (Mar 2025 – Aug 2025) — preventive maintenance procedures, equipment DB, spare-part controls, process documentation.</li>
-        <li><strong>Warehouse Trainee</strong> (Dec 2024 – Mar 2025) — inventory ops; proposed FlexSim-based layouts (narrow-aisle, mezzanine).</li>
-        <li><strong>Management Trainee</strong> (Jun 2024 – Mar 2025) — station standards, built door‑frame calculator app, authored maintenance SOPs.</li>
-      </ul>
-      <div class="row">
-        <a class="cta" href="./Rizky_CV.pdf" target="_blank" rel="noopener">Download PDF CV</a>
-      </div>
-    </article>
-    <article class="card">
-      <h3 class="title">Education & Certifications</h3>
-      <ul class="muted" style="margin:0 0 8px 18px">
-        <li><strong>Data Science & Data Analyst Certification</strong>, Dibimbing.id (Apr 2025 – present)</li>
-        <li><strong>M.Sc. Industrial Management</strong>, NTUST (GPA 3.78/4.30)</li>
-        <li><strong>Mandarin Training</strong>, NTNU (Jul 2023 – May 2024)</li>
-        <li><strong>B.Eng. Chemical Engineering</strong>, UII (GPA 3.35/4.00)</li>
-      </ul>
-      <p class="muted">Languages: Bahasa (native), English (TOEIC 870), Chinese Traditional (TOCFL A2). Skills: Python, Power BI/DAX, SQL, Aspen Hysys, Jira, FlexSim, Excel.</p>
-    </article>
-  </section>
-
-  <footer>
-    © <span id="y"></span> Rizky Febri Ibra Habibie — Hosted on GitHub Pages
-  </footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
