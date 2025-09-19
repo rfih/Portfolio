@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name – Portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#0f172a; --card:#111827; --text:#e5e7eb; --muted:#9ca3af; --accent:#60a5fa; }
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto; background:var(--bg); color:var(--text);}
+    header{max-width:920px;margin:48px auto 16px;padding:0 20px}
+    h1{font-size:40px;margin:0 0 8px} p{margin:0 0 24px;color:var(--muted)}
+    .grid{max-width:920px;margin:0 auto;padding:0 20px;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .card{background:var(--card);border:1px solid #1f2937;border-radius:16px;padding:18px;transition:transform .15s ease, border .15s}
+    .card:hover{transform:translateY(-3px);border-color:var(--accent)}
+    .title{font-weight:600;margin:0 0 6px}
+    .tag{display:inline-block;font-size:12px;color:#cbd5e1;border:1px solid #334155;border-radius:999px;padding:2px 8px;margin-right:6px}
+    a{color:var(--accent);text-decoration:none}
+    footer{max-width:920px;margin:32px auto 48px;padding:0 20px;color:var(--muted);font-size:14px}
+    nav a{margin-right:14px}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="mailto:you@email.com">Contact</a>
+      <a href="https://github.com/your-username" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/your-handle" target="_blank">LinkedIn</a>
+    </nav>
+    <h1>Your Name</h1>
+    <p>Product Manager • Data Analyst • Manufacturing Systems — I build practical tools that ship.</p>
+  </header>
+
+  <section id="projects" class="grid">
+    <article class="card">
+      <h3 class="title">Door Frame Calculator</h3>
+      <p class="tag">Python</p><p class="tag">Tkinter</p>
+      <p>Desktop app to compute bill-of-materials for door frames with multilingual UI.</p>
+      <p><a href="https://github.com/your-username/door-frame-calculator">Code</a> · <a href="#">Demo</a></p>
+    </article>
+    <article class="card">
+      <h3 class="title">MES Lite (Flask)</h3>
+      <p class="tag">Flask</p><p class="tag">SQLite</p>
+      <p>Internal web app to track station progress, work orders, and daily output.</p>
+      <p><a href="https://github.com/your-username/mes-lite">Code</a> · <a href="#">Live</a></p>
+    </article>
+    <article class="card">
+      <h3 class="title">Power BI: RFM Dashboard</h3>
+      <p class="tag">Power BI</p><p class="tag">DAX</p>
+      <p>Customer segmentation and channel analysis with clear executive summary.</p>
+      <p><a href="https://github.com/your-username/powerbi-rfm">Repo</a></p>
+    </article>
+  </section>
+
+  <section id="about" class="grid" style="margin-top:24px">
+    <article class="card">
+      <h3 class="title">About</h3>
+      <p>I build data-driven tools for factories and teams. TOEIC 870. Based in Kaohsiung, TW.</p>
+    </article>
+  </section>
+
+  <footer>
+    © <span id="y"></span> Your Name — Hosted on GitHub Pages
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
